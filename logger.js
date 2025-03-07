@@ -9,7 +9,7 @@ export function logRequest(req) {
 
     const logEntry = `[${timestamp}] IP: ${ip}, User-Agent: ${userAgent}\n`;
 
-    console.log(logEntry); +
+    console.log(logEntry); 
     appendFile(logFile, logEntry, (err) => {
         if (err) console.error('Помилка запису в лог-файл:', err);
     });
